@@ -7,9 +7,12 @@ import { EventService } from './event.service';
   providedIn: 'root'
 })
 export class UserService {
+  resourceUrl: string = "https://rsvrspringboot.herokuapp.com/users/";
+  //resourceUrl: string = "http://localhost:8080/users/";
+  
   users: User[];
   loggedInUserId: string;
-  resourceUrl: string = "http://localhost:8080/users/";
+  
   httpOptions = {
     headers: new HttpHeaders({'Content-Type': 'application/json'})
   }
