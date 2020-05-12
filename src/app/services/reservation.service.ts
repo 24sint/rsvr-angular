@@ -7,7 +7,9 @@ import { EventService } from './event.service';
   providedIn: 'root'
 })
 export class ReservationService {
-  resourceUrl: string = "http://localhost:8080/reservations/";
+  resourceUrl: string = "https://rsvrspringboot.herokuapp.com/reservations/";
+  //resourceUrl: string = "http://localhost:8080/reservations/";
+  
   httpOptions = {
     headers: new HttpHeaders({'Content-Type': 'application/json'})
   }
